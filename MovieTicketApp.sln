@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{ECF650EC-410
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Src\WebApi\WebApi.csproj", "{61980DEF-28DC-4B57-A754-3BF00B932AA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicket.Respository", "Src\MovieTicket.Respository\MovieTicket.Respository.csproj", "{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +34,21 @@ Global
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2}.Release|x64.Build.0 = Release|Any CPU
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2}.Release|x86.ActiveCfg = Release|Any CPU
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2}.Release|x86.Build.0 = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|x64.Build.0 = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Debug|x86.Build.0 = Debug|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x64.ActiveCfg = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x64.Build.0 = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x86.ActiveCfg = Release|Any CPU
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2} = {ECF650EC-4102-4499-8270-A483EA2BA05D}
+		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D} = {ECF650EC-4102-4499-8270-A483EA2BA05D}
 	EndGlobalSection
 EndGlobal
