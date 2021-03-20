@@ -8,5 +8,8 @@ namespace MovieTicket.Respository.Models.Venues
 {
     public class VenueModel
     {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

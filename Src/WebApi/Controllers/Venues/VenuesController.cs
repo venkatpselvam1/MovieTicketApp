@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MovieTicket.Respository.Models.Venues;
+using MovieTicket.Respository.Repositories.Venues;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,21 +13,30 @@ namespace WebApi.Controllers.Venues
     [ApiController]
     public class VenuesController : ControllerBase
     {
+        private IVenueRepository venueRepository;
+
+        public VenuesController()
+        {
+            this.venueRepository = new VenueRepository();
+        }
+
         [HttpGet]
         public IEnumerable<VenueModel> Get()
         {
-            return new List<VenueModel>();
+            return this.venueRepository.GetAllVenue();
         }
 
         [HttpPost]
-        public IActionResult Post(VenueModel venueModel)
+        public Guid Post(VenueModel venueModel)
         {
-            return Ok();
+            var newId = this.venueRepository.CreateVenue(venueModel);
+            return newId;
         }
 
         [HttpDelete]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(Guid id)
         {
+            this.venueRepository.Delete(id);
             return Ok();
         }
     }
