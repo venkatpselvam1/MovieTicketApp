@@ -15,9 +15,9 @@ namespace WebApi.Controllers.Venues
     {
         private IVenueRepository venueRepository;
 
-        public VenuesController()
+        public VenuesController(IVenueRepository venueRepository)
         {
-            this.venueRepository = new VenueRepository();
+            this.venueRepository = venueRepository;
         }
 
         [HttpGet]
