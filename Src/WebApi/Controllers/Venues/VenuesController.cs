@@ -14,14 +14,14 @@ namespace WebApi.Controllers.Venues
     [ApiController]
     public class VenuesController : ControllerBase
     {
-        readonly ILogger<VenuesController> _log;
+        readonly ILogger<VenuesController> log;
 
         private IVenueRepository venueRepository;
 
         public VenuesController(IVenueRepository venueRepository, ILogger<VenuesController> log)
         {
             this.venueRepository = venueRepository;
-            this._log = log;
+            this.log = log;
         }
 
         [HttpGet]
@@ -30,11 +30,24 @@ namespace WebApi.Controllers.Venues
             return this.venueRepository.GetAllVenue();
         }
 
+        [HttpGet]
+        [Route("/api/[controller]/{venueId}")]
+        public ActionResult<VenueModel> Get(Guid venueId)
+        {
+            var movie = this.venueRepository.GetVenueById(venueId);
+            if (movie == null)
+            {
+                return NoContent();
+            }
+
+            return movie;
+        }
+
         [HttpPost]
         public Guid Post(VenueModel venueModel)
         {
             var newId = this.venueRepository.CreateVenue(venueModel);
-            _log.LogDebug($"new venue is create with id {newId}.");
+            log.LogDebug($"new venue is create with id {newId}.");
             return newId;
         }
 
@@ -42,7 +55,7 @@ namespace WebApi.Controllers.Venues
         public IActionResult Delete(Guid id)
         {
             this.venueRepository.Delete(id);
-            _log.LogDebug($"venue with id {id} is deleted.");
+            log.LogDebug($"venue with id {id} is deleted.");
             return Ok();
         }
     }

@@ -12,17 +12,17 @@ namespace WebApi.Controllers
     [ApiController]
     public class HealthCheckController : ControllerBase
     {
-        readonly ILogger<HealthCheckController> _log;
+        readonly ILogger<HealthCheckController> log;
 
         public HealthCheckController(ILogger<HealthCheckController> log)
         {
-            _log = log;
+            this.log = log;
         }
 
         [HttpGet]
         public string Get()
         {
-            _log.LogDebug("Health check point is hit");
+            log.LogDebug("Health check point is hit");
             return DateTime.UtcNow.ToString();
         }
     }
