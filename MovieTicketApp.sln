@@ -5,9 +5,13 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{ECF650EC-4102-4499-8270-A483EA2BA05D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "Src\WebApi\WebApi.csproj", "{61980DEF-28DC-4B57-A754-3BF00B932AA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "Src\WebApi\WebApi.csproj", "{61980DEF-28DC-4B57-A754-3BF00B932AA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTicket.Respository", "Src\MovieTicket.Respository\MovieTicket.Respository.csproj", "{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieTicket.Respository", "Src\MovieTicket.Respository\MovieTicket.Respository.csproj", "{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{C57E560D-20ED-40A1-A672-372B5A432491}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{3846F817-B0FF-417D-8FDA-9754624727B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,9 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,9 +47,34 @@ Global
 		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x64.Build.0 = Release|Any CPU
 		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x86.ActiveCfg = Release|Any CPU
 		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D}.Release|x86.Build.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x64.Build.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x86.Build.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x64.ActiveCfg = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x64.Build.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x64.Deploy.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x86.ActiveCfg = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x86.Build.0 = Release|Any CPU
+		{3846F817-B0FF-417D-8FDA-9754624727B6}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{61980DEF-28DC-4B57-A754-3BF00B932AA2} = {ECF650EC-4102-4499-8270-A483EA2BA05D}
 		{82A3E7F1-876C-4DF3-8E8C-29FBA45EF29D} = {ECF650EC-4102-4499-8270-A483EA2BA05D}
+		{3846F817-B0FF-417D-8FDA-9754624727B6} = {C57E560D-20ED-40A1-A672-372B5A432491}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA32C158-CAD6-41FA-8978-4C29C62F95F6}
 	EndGlobalSection
 EndGlobal
