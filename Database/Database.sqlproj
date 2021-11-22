@@ -59,16 +59,21 @@
     <Folder Include="Movie" />
     <Folder Include="Movie\Table" />
     <Folder Include="Movie\Script" />
+    <Folder Include="Movie\Storedprocedure" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Movie\Table\Rating.sql" />
     <Build Include="Movie\Table\Movie.sql" />
     <Build Include="Movie\Table\Language.sql" />
+    <Build Include="Movie\Storedprocedure\GetAllMovies.sql" />
+    <Build Include="Movie\Storedprocedure\GetMovieById.sql" />
+    <Build Include="Movie\Storedprocedure\DeleteMovieById.sql" />
+    <Build Include="Movie\Storedprocedure\CreateMovie.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Movie\Script\CreateMovieScehma.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Movie\Script\MovieSeedScript.sql" />
+    <PostDeploy Include="Movie\Script\MovieSeedScript.sql" />
   </ItemGroup>
 </Project>
