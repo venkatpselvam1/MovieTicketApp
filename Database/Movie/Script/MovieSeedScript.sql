@@ -1,4 +1,9 @@
-﻿--insert into the languages table
+﻿-- dlete previouse entry
+delete from movie.Movie
+delete from movie.Language
+delete from movie.Rating
+
+--insert into the languages table
 insert into movie.Language (id, Name) values (0,'Unknown')
 insert into movie.Language (id, Name) values (1,'Tamil')
 insert into movie.Language (id, Name) values (2,'English')

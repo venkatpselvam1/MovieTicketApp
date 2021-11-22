@@ -14,6 +14,7 @@ using Microsoft.OpenApi.Models;
 using MovieTicket.Respository.Repositories.Movies;
 using MovieTicket.Respository.Repositories.Shows;
 using MovieTicket.Respository.Repositories.Venues;
+using MovieTicket.Respository.SQLDataAccess;
 
 namespace WebApi
 {
@@ -35,9 +36,12 @@ namespace WebApi
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi", Version = "v1" });
             });
-            services.AddSingleton<IVenueRepository, VenueRepository>();
-            services.AddSingleton<IMovieRepository, MovieRepository>();
-            services.AddSingleton<IShowRepository, ShowRepository>();
+            string conStr = Configuration.GetConnectionString("Default");
+            services.AddSingleton<IDatabaseOptions>((x) => new DatabaseOptions(conStr));
+            services.AddScoped<IVenueRepository, VenueRepository>();
+            services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IShowRepository, ShowRepository>();
+            services.AddScoped<ISqlDataAccess, SqlDataAccess>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

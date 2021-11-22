@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [movie].[GetMovieById]
-	@Id UNIQUEIDENTIFIER = 0
+	@Id UNIQUEIDENTIFIER 
 AS
 	SELECT * FROM movie.Movie where Id = @Id
 GO
