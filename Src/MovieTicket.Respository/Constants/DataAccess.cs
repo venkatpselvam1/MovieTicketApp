@@ -14,6 +14,12 @@ namespace MovieTicket.Respository.Constants
             public static string GetMovieById = "movie.GetMovieById";
             public static string DeleteMovieById = "movie.DeleteMovieById";
             public static string CreateMovie = "movie.CreateMovie";
+            public static string CreateVenue = "movie.CreateVenue";
+            public static string DeleteVenueById = "movie.DeleteVenueById";
+            public static string GetAllVenues = "movie.GetAllVenues";
+            public static string GetVenueById = "movie.GetVenueById";
+
+
         }
     }
 }

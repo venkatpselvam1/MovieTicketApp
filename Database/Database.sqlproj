@@ -69,6 +69,11 @@
     <Build Include="Movie\Storedprocedure\GetMovieById.sql" />
     <Build Include="Movie\Storedprocedure\DeleteMovieById.sql" />
     <Build Include="Movie\Storedprocedure\CreateMovie.sql" />
+    <Build Include="Movie\Table\Venue.sql" />
+    <Build Include="Movie\Storedprocedure\CreateVenue.sql" />
+    <Build Include="Movie\Storedprocedure\DeleteVenueById.sql" />
+    <Build Include="Movie\Storedprocedure\GetAllVenues.sql" />
+    <Build Include="Movie\Storedprocedure\GetVenueById.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Movie\Script\CreateMovieScehma.sql" />
