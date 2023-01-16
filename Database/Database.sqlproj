@@ -74,11 +74,19 @@
     <Build Include="Movie\Storedprocedure\DeleteVenueById.sql" />
     <Build Include="Movie\Storedprocedure\GetAllVenues.sql" />
     <Build Include="Movie\Storedprocedure\GetVenueById.sql" />
+    <Build Include="Movie\Table\Show.sql" />
+    <Build Include="Movie\Storedprocedure\CreatShow.sql" />
+    <Build Include="Movie\Storedprocedure\DeleteShowById.sql" />
+    <Build Include="Movie\Storedprocedure\GetAllShows.sql" />
+    <Build Include="Movie\Storedprocedure\GetShowById.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Movie\Script\CreateMovieScehma.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Movie\Script\MovieSeedScript.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Database.publish.xml" />
   </ItemGroup>
 </Project>

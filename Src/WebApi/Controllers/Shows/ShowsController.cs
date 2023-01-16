@@ -62,7 +62,7 @@ namespace WebApi.Controllers.Shows
                 log.LogError($"The movie is not avilable.");
                 return BadRequest();
             }
-            var venue = this.venueRepository.GetVenueById(ShowModel.VenuId);
+            var venue = this.venueRepository.GetVenueById(ShowModel.VenueId);
             if (venue == null)
             {
                 log.LogError($"The venue is not avilable.");
